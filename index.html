@@ -1,14 +1,64 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta name="robots" content="noindex, nofollow" />
+	<title>jQuery Flip example</title>
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="MichaelvanPaesschen.github.io/jquery.flip.min.js"></script>
+	<script>
+    $(function(){
+    	$(".flip-horizontal").flip({
+  			trigger: 'hover'
+		});
+		$(".flip-vertical").flip({
+			axis: 'x',
+  			trigger: 'hover'
+		});
+    });
+  	</script>
+	<link href="//fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet" type="text/css"/>
+    <link href="MichaelvanPaesschen.github.io/style.css" rel="stylesheet" media="all">
+</head>
 <body>
-Shiny apps:<br>
+
+	<h4>Shiny Apps</h4>
+	
+	<div id="flip-this" class="flip-horizontal"> 
+  		<div class="front"> 
+    		<img src="https://cloud.githubusercontent.com/assets/25458916/25566530/be61e54a-2dda-11e7-8b80-77cb92ce17d1.jpg" alt="" />
+  		</div> 
+  		<div class="back">
+<a href="https://michaelvanpaesschen.shinyapps.io/dxme/">Classifying Clients based on Electricity Usage (TimeSeries Clustering, Dynamic TimeWarping)</a> 
+  		</div> 
+	</div>
+		<div id="flip-this" class="flip-vertical"> 
+  		<div class="front"> 
+    		<img src="https://cloud.githubusercontent.com/assets/25458916/25566676/065fcc38-2dde-11e7-8863-650af219a89d.jpg" alt="" />
+  		</div> 
+  		<div class="back">
+    		<a href="https://michaelvanpaesschen.shinyapps.io/kMeansApp/">Spain: Birth rate vs Unemployment (k-Means Clustering)</a>
+  		</div> 
+	</div>
+<div id="flip-this" class="flip-horizontal"> 
+  		<div class="front"> 
+    		<img src="https://cloud.githubusercontent.com/assets/25458916/25566678/0662fafc-2dde-11e7-8b7d-9e14cd2ed8d4.jpg" alt="" />
+  		</div> 
+  		<div class="back">
+<a href="https://michaelvanpaesschen.shinyapps.io/kMeansApp/">Spain: Birth rate vs Unemployment (k-Means Clustering)</a>
+  		</div> 
+	</div>
+	
+	
+	<div id="flip-this" class="flip-vertical"> 
+  		<div class="front"> 
+    		<img src="https://cloud.githubusercontent.com/assets/25458916/25566677/0660d95c-2dde-11e7-8880-c6d2edc33f01.jpg" alt="" />
+  		</div> 
+  		<div class="back">
 <a href="https://michaelvanpaesschen.shinyapps.io/spain_mortgage_versus_salary_zoom/">Spain: Mortgage value vs Income (Zoom Example)</a>
-<br><a href="https://michaelvanpaesschen.shinyapps.io/kMeansApp/">Spain: Birth rate vs Unemployment (k-Means Clustering)</a>
- <br><a href="https://michaelvanpaesschen.shinyapps.io/knearestneighbours/">kNN (unaltered)</a> 
-  <br><a href="https://michaelvanpaesschen.shinyapps.io/dxme/">Classifying Clients based on Electricity Usage (TimeSeries Clustering, Dynamic TimeWarping)</a> 
-  test with: <a href="https://github.com/MichaelvanPaesschen/MichaelvanPaesschen.github.io/blob/master/Series5.csv">this csv file</a>
-  
-  
+  		</div> 
+	</div>
+
   
   
   <br>Automation:
